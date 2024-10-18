@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog en Ligne</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- En-tête -->
+  <header class="bg-gray-600 text-white p-5 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Travelling</h1>
+    <nav>
+      <ul class="flex space-x-6  ">
+        <li><a href="#home" class=" hover:text-gray-300 hover:font-bold">Home</a></li>
+        <li><a href="#featuresarticles" class=" hover:text-gray-300 hover:font-bold">Featured Articles</a></li>
+        <li><a href="#categories" class=" hover:text-gray-300 hover:font-bold">Categories</a></li>
+        <li><a href="#articles" class=" hover:text-gray-300 hover:font-bold">Articles</a></li>
+        <li><a href="#contact" class=" hover:text-gray-300 hover:font-bold">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('./travelling.jpg');">
+
+    <div class="relative flex items-center justify-center h-full">
+      <h2 class="text-5xl text-white font-extrabold z-10 drop-shadow-lg font-serif">Welcome to my travelling blog</h2> <!-- Titre -->
+    </div>
+  </section>
+
+  <!-- Section des articles vedettes -->
+  <section id="featured-articles" class="container mx-auto py-12">
+    <h2 class="text-4xl font-semibold text-center mb-8">Featured Articles</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-md rounded-lg overflow-hidden ">
+        <div class="flex justify-center">
+          <img src="mountains.jpg" alt="Article 1" class="w-full h-48">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">Explore the Mountains</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, doloremque quasi? Deleniti inventore
+            similique beatae tempore non necessitatibus delectus libero obcaecati ex alias temporibus aliquid commodi,
+            blanditiis corrupti placeat. Porro.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="beachs.jpg" alt="Article 2" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">Beach Paradise</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi illum eaque numquam quos quia animi
+            minus aliquid impedit distinctio adipisci ea quibusdam voluptatum facere a aspernatur sed, illo labore id!
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="city.jpg" alt="Article 3" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">City Escapades</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis et maiores ullam quam quia
+            excepturi consectetur non sed voluptates aperiam veritatis, deserunt nostrum enim similique a debitis
+            aliquid quo?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section des catégories -->
+  <section id="categories" class="bg-white container mx-auto py-12">
+    <h3 class="text-4xl font-semibold mb-8 text-center">Categories</h3>
+    <div class="grid grid-cols-2 gap-4 mr-2 ml-2 font-light">
+      <div class="p-4 bg-gray-300 font-serif">Adventure</div>
+      <div class="p-4 bg-gray-300 font-serif">Relaxation</div>
+      <div class="p-4 bg-gray-300 font-serif">City Life</div>
+      <div class="p-4 bg-gray-300 font-serif">Culture</div>
+    </div>
+  </section>
+  <!-- Section des articles récents -->
+  <section id="articles" class="container mx-auto py-12">
+    <h2 class="text-4xl font-semibold text-center mb-8">Recent Articles</h2>
+    <ul class="space-y-4">
+      <li class="flex justify-between items-center bg-white p-4 rounded-md shadow-sm">
+        <span>Hiking the Himalayas</span>
+        <span class="text-gray-500">20 September 2024</span>
+      </li>
+      <li class="flex justify-between items-center bg-white p-4 rounded-md shadow-sm">
+        <span>Surfing in Bali</span>
+        <span class="text-gray-500">20 August 2024</span>
+      </li>
+      <li class="flex justify-between items-center bg-white p-4 rounded-md shadow-sm">
+        <span>Exploring Paris</span>
+        <span class="text-gray-500">20 July 2024</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Formulaire d'abonnement à la lettre d'information -->
+  <section id="contact" class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md sm:text-center">
+            <h2 class=" text-3xl font-semibold mb-4 tracking-tight  text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
+            <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400"> Feel free to sign up with your email.</p>
+            <form action="#">
+                <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                    <div class="relative w-full">
+                        <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
+                    </div>
+                    <div>
+                        <button type="submit" class="py-3 px-5 w-full bg-gray-900 text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+                    </div>
+                </div>
+                <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+            </form>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <p>&copy; 2024 Travelling. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Instagram</a>
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
